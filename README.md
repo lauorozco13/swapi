@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The purpose of this challenge is to demonstrate your ability to create a web app that can consume an API and display information in a meaningful way. This is your chance to show us what you're made of 😀
 
-## Available Scripts
+# Instructions
 
-In the project directory, you can run:
+Build a UI worthy of Mordor. Just kidding…
 
-### `npm start`
+Using [SWAPI](https://swapi.dev/), build a UI with routes for each resource (people, films, starships, vehicles, species, and planets.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Your app should have some kind of navigation for easily accessing the routes in your app. OK
+2. Each resource should have a list view that lists the documents from the API. The list should be searchable by name. OK
+3. Build a detail view that each item in your list links to to display the item's properties OK
+4. Create a local storage to track how many times each viewed item has been viewed (most popular items) OK
+5. Build a Popular Items view that lists the most popular items based on the local storage tally of item views. OK
+6. Given that there are 6 resources, we suggest creating/ using reusable components. OK
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The instructions are open-ended to provide you creative space to make this project your own!
 
-### `npm test`
+# Success Criteria
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following are the main criteria we are looking at when reviewing your response:
 
-### `npm run build`
+- Javascript/ Typescript proficiency
+- State management
+- Design patterns
+- API Implementation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Bonus points (but not the required focus):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- CSS/ Intuitive Design
+- Responsiveness
+- Well-written tests
+- Web Workers
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Please commit your response to a git repo and be able to explain what you did and why you did it as we will review your response with you in a follow up interview.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Goodluck, have fun, and may the force be with you!
