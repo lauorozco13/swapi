@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 const BASE_URL = 'https://swapi.dev/api/'
 
-export const useFetch = (complement) => {
+export function useFetch(complement) {
 	const [data, setData] = useState(null)
 	const [error, setError] = useState(null)
 	const [loading, setLoading] = useState(false)

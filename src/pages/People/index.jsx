@@ -5,7 +5,7 @@ import Dashboard from '../../components/Dashboard'
 import Error from '../../components/Error'
 import Loading from '../../components/Loading'
 
-const People = () => {
+function People() {
 	const { data, error, loading } = useFetch('people')
 
 	const columns = [
@@ -20,7 +20,7 @@ const People = () => {
 	if (loading) return <Loading />
 	if (error) return <Error message={error.message} />
 
-	return <Dashboard data={data ? data.results : []} columns={columns}/>
+	return <Dashboard data={data ? data.results : []} columns={columns} />
 }
 
 export default People

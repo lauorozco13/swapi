@@ -5,7 +5,7 @@ import Dashboard from '../../components/Dashboard'
 import Error from '../../components/Error'
 import Loading from '../../components/Loading'
 
-const Species = () => {
+function Species() {
 	const { data, error, loading } = useFetch('species')
 
 	const columns = [

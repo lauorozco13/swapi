@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-function DataTable({ data, columns, onRowClick, isUnsearchable}) {
+function DataTable({ data, columns, onRowClick, isUnsearchable }) {
 	const { tableContainer, tableHeader, headerCell, searchContainer } = useStyles()
 	const [searchValue, setSearchValue] = useState('')
 	const [filteredData, setFilteredData] = useState(data)
@@ -53,14 +53,16 @@ function DataTable({ data, columns, onRowClick, isUnsearchable}) {
 
 	return (
 		<TableContainer className={tableContainer}>
-			{!isUnsearchable && <div className={searchContainer}>
-				<TextField
-					fullWidth
-					label="Search by name"
-					value={searchValue}
-					onChange={handleSearchChange}
-				/>
-			</div>}
+			{!isUnsearchable && (
+				<div className={searchContainer}>
+					<TextField
+						fullWidth
+						label="Search by name"
+						value={searchValue}
+						onChange={handleSearchChange}
+					/>
+				</div>
+			)}
 			<Table>
 				<TableHead className={tableHeader}>
 					<TableRow>

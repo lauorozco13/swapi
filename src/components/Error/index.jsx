@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-const Error = ({ message, onRetry }) => {
+function Error({ message }) {
 	const classes = useStyles()
 
 	return (

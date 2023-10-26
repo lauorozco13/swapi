@@ -1,17 +1,17 @@
-import React, { createContext, useContext } from 'react';
+import React, { createContext, useContext } from 'react'
 
 import { useLocalStorage } from './useLocalStorage'
 
-const ViewCountContext = createContext();
+const ViewCountContext = createContext()
 
-export const useViewCounts = () => {
-  return useContext(ViewCountContext);
-};
+export function useViewCounts() {
+	return useContext(ViewCountContext)
+}
 
 export const ViewCountProvider = ({ children }) => {
-  const [views, setViews] = useLocalStorage('viewCounts', {})
+	const [views, setViews] = useLocalStorage('viewCounts', {})
 
-  const incrementViewCount = (url) => {
+	const incrementViewCount = (url) => {
 		const updatedViews = { ...views }
 
 		if (!updatedViews[url]) {
@@ -21,11 +21,11 @@ export const ViewCountProvider = ({ children }) => {
 		}
 
 		setViews(updatedViews)
-  };
+	}
 
-  return (
-    <ViewCountContext.Provider value={{ views, incrementViewCount }}>
-      {children}
-    </ViewCountContext.Provider>
-  );
-};
+	return (
+		<ViewCountContext.Provider value={{ views, incrementViewCount }}>
+			{children}
+		</ViewCountContext.Provider>
+	)
+}

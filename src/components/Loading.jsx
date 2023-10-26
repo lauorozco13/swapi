@@ -11,7 +11,7 @@ const useStyles = makeStyles(() => ({
 	}
 }))
 
-const Loading = () => {
+function Loading() {
 	const classes = useStyles()
 
 	return (

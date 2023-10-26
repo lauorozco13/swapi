@@ -1,38 +1,46 @@
-# Summary
+# SWAPI Web Application
 
-The purpose of this challenge is to demonstrate your ability to create a web app that can consume an API and display information in a meaningful way. This is your chance to show us what you're made of 😀
+Welcome to the SWAPI web application challenge. May the force be with you! 🌌
 
-# Instructions
+## Objective
 
-Build a UI worthy of Mordor. Just kidding…
+The developer's mission, should they choose to accept it, is to utilize the [SWAPI](https://swapi.dev/) to craft a UI with dedicated routes for each resource: people, films, starships, vehicles, species, and planets.
 
-Using [SWAPI](https://swapi.dev/), build a UI with routes for each resource (people, films, starships, vehicles, species, and planets.
+## Requirements:
 
-1. Your app should have some kind of navigation for easily accessing the routes in your app. OK
-2. Each resource should have a list view that lists the documents from the API. The list should be searchable by name. OK
-3. Build a detail view that each item in your list links to to display the item's properties OK
-4. Create a local storage to track how many times each viewed item has been viewed (most popular items) OK
-5. Build a Popular Items view that lists the most popular items based on the local storage tally of item views. OK
-6. Given that there are 6 resources, we suggest creating/ using reusable components. OK
+- They should implement a **navigation system** for easily accessing different routes.
+- They need to design a **list view** for each resource. This view should present documents from the API and be searchable by name.
+- They should introduce a **detail view**. Items in their list should link to this view to showcase an item's complete properties.
+- They must implement **local storage** to monitor the frequency with which each item is viewed (to determine the most popular items).
+- They should develop a **Popular Items** section that displays items based on the local storage count of views.
+- With six resources available, they should consider the creation or utilization of **reusable components** to optimize their workflow.
 
-The instructions are open-ended to provide you creative space to make this project your own!
+## Development & Setup:
 
-# Success Criteria
+### Dependencies:
 
-The following are the main criteria we are looking at when reviewing your response:
+To help you get started, this project has been scaffolded with several key dependencies:
 
-- Javascript/ Typescript proficiency
-- State management
-- Design patterns
-- API Implementation
+- **UI & Styling**: `@emotion/react`, `@emotion/styled`, `@mui/icons-material`, `@mui/material`, and `@mui/styles`.
+- **Routing**: `react-router-dom`
+- **Core**: `react` and `react-dom`
+- **Testing**: `@testing-library/jest-dom`, `@testing-library/react`, `@testing-library/react-hooks`, and `@testing-library/user-event`
 
-# Bonus points (but not the required focus):
+To install the dependencies, simply run:
 
-- CSS/ Intuitive Design
-- Responsiveness
-- Well-written tests
-- Web Workers
+```bash
+npm install
+```
 
-Please commit your response to a git repo and be able to explain what you did and why you did it as we will review your response with you in a follow up interview.
+### Available Scripts:
 
-Goodluck, have fun, and may the force be with you!
+- `npm start`: Launches the app in development mode.
+- `npm build`: Builds the app for production.
+- `npm test`: Runs the jest test runner.
+- `npm eject`: Ejects from the `create-react-app` setup. Use with caution.
+
+## Wrapping Up:
+
+Once you've completed the challenge, please push your solution to a git repository. Be prepared to discuss your decisions, as we'll be diving into your submission during a follow-up interview.
+
+Best of luck with the challenge! Embrace the opportunity, enjoy the process, and remember - may the force be with you! 🌌

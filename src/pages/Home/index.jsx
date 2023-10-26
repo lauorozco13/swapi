@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-const HomePage = () => {
+function HomePage() {
 	const classes = useStyles()
 
 	return (

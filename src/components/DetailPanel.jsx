@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
 	}
 }))
 
-const DetailPanel = ({ url, open, onClose }) => {
+function DetailPanel({ url, open, onClose }) {
 	const classes = useStyles()
 	const shortUrl = url && url.split('/').slice(-3).join('/')
 	const { data, error, loading } = useFetch(shortUrl)

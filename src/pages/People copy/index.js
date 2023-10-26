@@ -2,18 +2,19 @@ import React from 'react'
 
 import { useFetch } from '../../api/useFetch'
 import Dashboard from '../../components/Dashboard'
-import Error from '../../components/Error'
+import Error from '../../components'
 import Loading from '../../components/Loading'
 
-function Vehicles() {
-	const { data, error, loading } = useFetch('vehicles')
+const People = () => {
+	const { data, error, loading } = useFetch('people')
 
 	const columns = [
 		{ field: 'name', headerName: 'Name' },
-		{ field: 'model', headerName: 'Model' },
-		{ field: 'manufacturer', headerName: 'Manufacturer' },
-		{ field: 'cost_in_credits', headerName: 'Cost in Credits' },
-		{ field: 'length', headerName: 'Length' }
+		{ field: 'height', headerName: 'Height' },
+		{ field: 'mass', headerName: 'Mass' },
+		{ field: 'hair_color', headerName: 'Hair color' },
+		{ field: 'skin_color', headerName: 'Skin color' },
+		{ field: 'gender', headerName: 'Gender' }
 	]
 
 	if (loading) return <Loading />
@@ -22,4 +23,4 @@ function Vehicles() {
 	return <Dashboard data={data ? data.results : []} columns={columns} />
 }
 
-export default Vehicles
+export default People

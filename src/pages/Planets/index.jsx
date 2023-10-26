@@ -5,7 +5,7 @@ import Dashboard from '../../components/Dashboard'
 import Error from '../../components/Error'
 import Loading from '../../components/Loading'
 
-const Planets = () => {
+function Planets() {
 	const { data, error, loading } = useFetch('planets')
 
 	const columns = [
