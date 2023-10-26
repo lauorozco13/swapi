@@ -38,9 +38,3 @@ npm install
 - `npm build`: Builds the app for production.
 - `npm test`: Runs the jest test runner.
 - `npm eject`: Ejects from the `create-react-app` setup. Use with caution.
-
-## Wrapping Up:
-
-Once you've completed the challenge, please push your solution to a git repository. Be prepared to discuss your decisions, as we'll be diving into your submission during a follow-up interview.
-
-Best of luck with the challenge! Embrace the opportunity, enjoy the process, and remember - may the force be with you! 🌌
